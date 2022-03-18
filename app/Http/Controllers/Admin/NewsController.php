@@ -13,8 +13,9 @@ class NewsController extends Controller
         return view('admin.news.create');
     }
 
-    public function edit()
+    public function create(Request $request)
     {
-        return view('admin.profile.edit');
-    }
+        // admin/news/createにリダイレクトする
+        return redirect('admin/news/create');
+    } 
 }
